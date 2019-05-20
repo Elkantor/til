@@ -32,12 +32,12 @@ export const MainHeading = ({ back }: Props) => {
           </span>
 
           <span className={CSS.right}>
-            <a href='https://github.com/rstacruz' className={CSS.otherLink}>
-              <span>@rstacruz</span>
+            <a href='www.raylib.com' className={CSS.otherLink}>
+              <span>raylib.com</span>
               <img
                 width={16}
                 height={16}
-                src='https://avatars.githubusercontent.com/rstacruz?s=64'
+                src='https://www.raylib.com/common/img/raylib_logo.png'
               />
             </a>
           </span>
