@@ -31,7 +31,7 @@ module.exports = {
 
     // This needs to be the bare domain, without the pathPrefix, for
     // gatsby-plugin-sitemap to work properly
-    siteUrl: 'https://ricostacruz.com'
+    siteUrl: 'https://til-raylib.netlify.com'
   },
   plugins: [
     'gatsby-plugin-feed',
@@ -58,7 +58,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://ricostacruz.com/til'
+        siteUrl: 'https://til-raylib.netlify.com/til'
       }
     },
     {

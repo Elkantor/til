@@ -3,16 +3,16 @@
 </p>
 
 <h1 align='center'>
-til.ricostacruz.com
+til-raylib.netlify.com
 </h1>
 
 <p align='center'>
-A blog with too many articles
+A website to share our knowledge about raylib and C programming
 </p>
 
 <p align='center'>
-<a href='https://app.netlify.com/sites/rstacruz-tilnext/deploys'>
-<img src='https://api.netlify.com/api/v1/badges/66598723-416e-4305-9b16-b9fe561b1efb/deploy-status'>
+<a href='https://app.netlify.com/sites/til-raylib/deploys'>
+<img src='https://api.netlify.com/api/v1/badges/067c3f21-1d5a-446c-8b14-81b179db1e09/deploy-status'>
 </a>
 </p>
 

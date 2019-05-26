@@ -10,8 +10,8 @@ command = "yarn build"
   to = "/:splat"
 
 [[redirects]]
-  from = "https://til.ricostacruz.com/*"
-  to = "https://ricostacruz.com/til/:splat"
+  from = "https://til-raylib.netlify.com/*"
+  to = "https://til-raylib.netlify.com/til/:splat"
 
 # https://www.netlify.com/blog/2017/02/23/better-living-through-caching/
 # https://www.netlify.com/docs/headers-and-basic-auth/#custom-headers

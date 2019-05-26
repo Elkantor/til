@@ -57,7 +57,7 @@ class BlogPostTemplate extends React.Component<Props> {
           <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"></link>
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:image' content={image} />
-          <meta name='twitter:creator' content={'@rstacruz'} />
+          <meta name='twitter:creator' content={'@theelkantor'} />
 
           <meta property='og:type' content='article' />
           <meta property='og:title' content={title} />
