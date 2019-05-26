@@ -11,8 +11,7 @@ description: How to initialize a raylib window in fullscreen by default?
 
 <!-- {.-literate-style} -->
 
-When initializing a new window with raylib, you can set its size in fullscreen by default, by passing 0 to
-its width and height parameters.
+When initializing a new window with raylib, you can set its size in fullscreen by default, by passing 0 for the width and height parameters when calling the **InitWindow** function.
 
 <figure>
 <figcaption class='-title'>TLDR</figcaption>
@@ -22,7 +21,7 @@ its width and height parameters.
 
 	int main(int argc, char** argv){
 
-		// Initialize a window fullscreen_mode
+		// Initialize a window in fullscreen
 		InitWindow(0, 0, "test window");
 
 		while(!WindowShouldClose()){
