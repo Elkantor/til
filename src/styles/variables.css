@@ -57,9 +57,9 @@
   }
 
   --code-font: {
-    font-family: 'IBM Plex Mono', monospace;
-    letter-spacing: -0.06em;
-    font-weight: 500;
+    font-family: 'Fira Sans', monospace;
+    letter-spacing: 0.06em;
+    font-weight: 600;
   }
 }
 

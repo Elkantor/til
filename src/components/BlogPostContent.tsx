@@ -21,6 +21,8 @@ interface Props {
   title: string
   date: string | void
   titleBody: HastNode[]
+  author: string
+  url_author: string
 }
 
 interface State {
@@ -35,7 +37,7 @@ interface State {
  */
 
 const BlogPostContent = (props: Props) => {
-  const { body, titleBody, title, date } = props
+  const { body, titleBody, title, date, author, url_author } = props
   const [state, setState] = useState({ activeSection: 0 })
   const sections = body
   const count = sections.length + 1
@@ -52,7 +54,7 @@ const BlogPostContent = (props: Props) => {
         bottomOffset='35%'
       >
         <span>
-          <BlogPostTitle {...{ title, date, body: titleBody }} />
+          <BlogPostTitle {...{ title, date, body: titleBody, author, url_author }} />
         </span>
       </Waypoint>
 

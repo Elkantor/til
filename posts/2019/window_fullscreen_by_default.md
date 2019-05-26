@@ -1,6 +1,8 @@
 ---
 title: Initialize a window in fullscreen by default
 tags: [raylib]
+author: Victor Gallet (Elkantor)
+url_author: https://twitter.com/TheElkantor
 date: 2019-05-26
 description: How to initialize a raylib window in fullscreen by default?
 ---

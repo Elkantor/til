@@ -14,7 +14,7 @@ const PostFooter = (props: Props) => {
     <div className={CSS.root}>
       <div className={CSS.body}>
         <p>
-          You have just read <span>{title}</span>,{' '}
+          You have just read <b><span>{title}</span></b>,{' '}
           {date ? (
             <>
               written on <span>{date}</span>.
@@ -22,10 +22,8 @@ const PostFooter = (props: Props) => {
           ) : (
             <>an unpublished draft.</>
           )}{' '}
-          This is <Link to='/'>Today I Learned</Link>, a collection of random
-          tidbits I've learned through my day-to-day web development work. I'm
-          Rico Sta. Cruz, <a href='https://github.com/rstacruz'>@rstacruz</a> on
-          GitHub (and <a href='https://twitter.com/rstacruz'>Twitter</a>!).
+          <br></br>This is <Link to='/'>Today I Learned</Link>, a collection of random
+          tidbits learned through our work using <a href='https://www.raylib.com'>raylib</a>.
         </p>
         <p>
           <Link to='/'>

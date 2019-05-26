@@ -8,6 +8,8 @@ export interface PageNode {
     date: string | void
     tags: (string[]) | void
     description: string | void
+    author: string
+    url_author: string
     attachments: Array<{ publicURL: string | void }> | void
   }
 }

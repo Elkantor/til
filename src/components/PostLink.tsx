@@ -10,7 +10,7 @@ export interface Props {
 
 const PostLink = ({ node }: Props) => {
   const { slug } = node.fields
-  const { title, date, tags } = node.frontmatter
+  const { title, date, tags, author, url_author } = node.frontmatter
   return (
     <article>
       <Link to={slug} className={CSS.link}>

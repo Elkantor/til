@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component<Props> {
     const { data } = this.props
     const post = data.markdownRemark
     const { previous, next } = this.props.pageContext
-    const { title, date, description: frontDescription } = post.frontmatter
+    const { title, date, description: frontDescription, author, url_author } = post.frontmatter
     const { pathPrefix } = data.site
     const { siteUrl } = data.site.siteMetadata
     const { slug } = post.fields
@@ -54,7 +54,7 @@ class BlogPostTemplate extends React.Component<Props> {
       <Layout location={this.props.location}>
         <Helmet>
           <title>{title}</title>
-
+          <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"></link>
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:image' content={image} />
           <meta name='twitter:creator' content={'@rstacruz'} />
@@ -72,7 +72,7 @@ class BlogPostTemplate extends React.Component<Props> {
         <div>
           <BlogNav />
           <BlogPostContent
-            {...{ title, date, titleBody, body: sections.slice(1) }}
+            {...{ title, date, titleBody, body: sections.slice(1), author, url_author }}
           />
         </div>
 
@@ -133,6 +133,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        author
+        url_author
       }
     }
   }
