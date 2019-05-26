@@ -21,13 +21,13 @@ module.exports = {
   pathPrefix: '/til',
   siteMetadata: {
     title: 'TIL',
-    fullTitle: 'Today I Learned — web development musings semi-daily',
+    fullTitle: 'Today I Learned — raylib and c programming musings semi-daily',
     shortDescription:
-      'TIL - a collection of things I learned on my day-to-day web development work.',
+      'TIL - a collection of things learned using the amazing raylib C framework.',
 
     // For gatsby-feed
     description:
-      'TIL - a collection of things I learned on my day-to-day web development work.',
+      'TIL - a collection of things learned using the amazing raylib C framework.',
 
     // This needs to be the bare domain, without the pathPrefix, for
     // gatsby-plugin-sitemap to work properly
