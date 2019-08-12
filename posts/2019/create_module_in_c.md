@@ -11,7 +11,7 @@ description: How to create simple module in C as struct?
 
 
 In C, it can become tricky, as your project grows, to keep having an organize architecture of the code.
-In fact, even if we like it or not, the modern way of writing modules, bringing by languages like JS with NodeJS, is one way of splitting your code.
+In fact, the modern way of writing modules, bringing by languages like JS with NodeJS (even if we like it or not), is one way of splitting your code.
 How to do that in C, where, for example, you have no namespace?
 
 You can simulate that by creating a module as a constant struct, which embed functions and variables.
@@ -21,8 +21,8 @@ You can simulate that by creating a module as a constant struct, which embed fun
 <figcaption class='-title'>test.h</figcaption>
 
 ```c
-	int increment(int out_integer){
-        return ++out_integer;
+	int increment(const int in_integer){
+        return in_integer + 1;
     }
 
     const struct test {
@@ -30,9 +30,9 @@ You can simulate that by creating a module as a constant struct, which embed fun
         int (*const increment)(int);
     } test = {
         // var is equal to 25
-        25,
+        .var = 25,
         // increment const function pointer to the increment function
-        increment   
+        .increment = increment   
     };
 
 ```
