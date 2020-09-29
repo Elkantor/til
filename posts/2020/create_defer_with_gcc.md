@@ -66,9 +66,6 @@ gcc main.c -E -o main.output
 ```
 
 We get:
-
-<figure>
-<figcaption class='-title'>main.output</figcaption>
 	
 ```c
 	int puts(const char* _string);
@@ -85,9 +82,6 @@ We get:
 		return 0;
 	}
 ```
-
-</figure>
-
 
 And if we compile and execute our little program:
 
