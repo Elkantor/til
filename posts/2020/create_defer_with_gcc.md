@@ -83,6 +83,7 @@ We get:
 		test();
 	}
 ```
+
 </figure>
 
 
@@ -93,6 +94,7 @@ gcc main.c -o main && ./main
 ```
 
 Which gives:
+
 ```sh
 this should bed printed before
 this should be printed after
