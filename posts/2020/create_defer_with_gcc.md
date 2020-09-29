@@ -85,7 +85,9 @@ We get:
 ```
 </figure>
 
+
 And if we compile and execute our little program:
+
 ```sh
 gcc main.c -o main && ./main
 ```
