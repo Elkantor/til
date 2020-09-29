@@ -90,7 +90,7 @@ And if we compile and execute our little program:
 gcc main.c -o main && ./main
 ```
 
-That gives:
+Which gives:
 ```sh
 this should bed printed before
 this should be printed after
