@@ -66,7 +66,7 @@ gcc main.c -E -o main.output
 
 We get:
 
-```C
+```c
 	int puts(const char* _string);
 
 	void test()
