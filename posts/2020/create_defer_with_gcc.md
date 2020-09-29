@@ -18,7 +18,7 @@ In C, that can be super usefull, for example, to never forget to free after call
 So let's create this macro!
 
 <figure>
-<figcaption class='-title'>test.h</figcaption>
+<figcaption class='-title'>main.c</figcaption>
 
 ```c
 	#define defer _d0(__COUNTER__)
@@ -66,6 +66,9 @@ gcc main.c -E -o main.output
 
 We get:
 
+<figure>
+<figcaption class='-title'>main.output</figcaption>
+	
 ```c
 	int puts(const char* _string);
 
@@ -80,6 +83,7 @@ We get:
 		test();
 	}
 ```
+</figure>
 
 And if we compile and execute our little program:
 ```sh
