@@ -70,6 +70,7 @@ module.exports = {
     },
     fs({ name: `posts`, path: `${__dirname}/posts/drafts` }),
     fs({ name: `posts`, path: `${__dirname}/posts/2019` }),
+    fs({ name: `posts`, path: `${__dirname}/posts/2020` }),
     {
       resolve: 'gatsby-transformer-remark',
       options: {
