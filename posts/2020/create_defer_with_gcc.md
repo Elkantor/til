@@ -47,7 +47,7 @@ So now, if we write this little program:
 	void test()
 	{
 		defer { puts("this should be printed after"); }
-		puts("this should bed printed before");
+		puts("this should be printed before");
 	}
 
 	int main()
@@ -73,7 +73,7 @@ We get:
 	void test()
 	{
 		auto void f0(void*);int s0 __attribute__((cleanup(f0)));void f0(void*_) { puts("this should be printed after"); }
-		puts("this should bed printed before");
+		puts("this should be printed before");
 	}
 
 	int main()
@@ -92,6 +92,6 @@ gcc main.c -o main && ./main
 Which gives:
 
 ```sh
-this should bed printed before
+this should be printed before
 this should be printed after
 ```
