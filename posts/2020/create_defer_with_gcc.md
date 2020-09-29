@@ -53,6 +53,7 @@ So now, if we write this little program:
 	int main()
 	{
 		test();
+		return 0;
 	}
 ```
 
@@ -81,6 +82,7 @@ We get:
 	int main()
 	{
 		test();
+		return 0;
 	}
 ```
 
